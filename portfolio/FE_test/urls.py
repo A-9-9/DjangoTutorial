@@ -10,4 +10,7 @@ urlpatterns = [
 	path('member/<str:username>/', views.member_detail, name='index'),
 	path('member/<str:username>/invest', views.member_invest, name='index'),
 	path('register', views.register, name='index'),
+	
+
+	path('pie', views.pie_chart, name='pie')
 ]

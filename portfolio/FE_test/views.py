@@ -5,7 +5,15 @@ from django.http import HttpResponse
 def home(request):
 	return render(request, 'FE_test/index.html', {})
 
-
+def pie_chart(request):
+	context = {
+		'data': [
+			['AMAZON.COM', 20], 
+			['ABBOTT LABORATORIES', 30], 
+			['AES', 15], 
+			['ABIOMED', 35]], 
+	}
+	return render(request, 'FE_test/pie_chart.htm', context)
 
 def aboutUs(request):
 	pass
