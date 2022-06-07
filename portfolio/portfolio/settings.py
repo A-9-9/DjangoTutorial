@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'FE_test.apps.FeTestConfig', 
     'MV_portfolio.apps.MvPortfolioConfig', 
     'django.contrib.admin',
     'django.contrib.auth',
